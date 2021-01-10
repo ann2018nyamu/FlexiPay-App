@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/wallet"
+        android:id="@+id/Wallet"
+        app:showAsAction="always"
+        android:title="WALLET">
+
+    </item>
+
+    <item
+        android:icon="@drawable/pay_bills"
+        android:id="@+id/bills"
+        app:showAsAction="always"
+        android:title="PAY_BILL">
+
+    </item>
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="SCAN $ PAY">
+
+    </item>
+
+    <item
+        android:icon="@drawable/offers"
+        android:id="@+id/offers"
+        app:showAsAction="always"
+        android:title="OFFERS">
+
+    </item>
+
+    <item
+        android:icon="@drawable/icons_cus"
+        android:id="@+id/more"
+        app:showAsAction="always"
+        android:title="MORE">
+
+    </item>
+
+
+</menu>

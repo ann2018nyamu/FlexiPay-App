@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FlexiPayApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="logo">logo</string>
+    <string name="hidebalance">hidebalance</string>
+    <string name="Ministatement">Ministatement</string>
+    <string name="Fast"><![CDATA["A Fast & Efficient Service to Go Cashless! "]]></string>
+    <string name="Show_Balance">Show_Balance</string>
+    <string name="Hide_Balance">Hide_Balance</string>
+</resources>

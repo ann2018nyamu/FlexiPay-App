@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PersonalActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="24dp"
+        android:text="Personal Info"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="324dp"/>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="Please provide us with your
+personal information. Your name should just as it appears on your National ID, Passport"
+        />
+
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:id="@+id/Surname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:id="@+id/Given_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Given Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:id="@+id/Date"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="date"
+        android:hint="What's Your D.O.B?(DD/MM/YY)"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:id="@+id/Gender"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Gender"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:id="@+id/Email_Address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Your Email Address"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:id="@+id/CreateAccount_btn"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/button_bg"
+        android:text="Create account"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

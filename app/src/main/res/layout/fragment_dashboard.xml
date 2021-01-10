@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Good Afternoon, Wilfred N"
+            android:textSize="26dp"
+            android:textStyle="normal"
+            android:background="@color/blue"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/blue"
+        android:backgroundTint="@color/blue">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="FlexiPay Balance"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/ugx"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:text="Ugx" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:text="140,457.05" />
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="110dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/sports"
+                android:backgroundTint="@color/black"
+                android:button="@drawable/add_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:lineHeight="16sp"
+                android:showText="false"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textOff="@string/Show_Balance"
+                android:textOn="@string/Hide_Balance"
+                android:textSize="8sp"
+                android:textStyle="italic"
+                android:thumb="@null"
+                app:showText="true"
+                app:track="@null"
+                tools:targetApi="p" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="65dp"
+                android:layout_weight="0.01"
+                android:background="@drawable/sports"
+                android:backgroundTint="@color/black"
+                android:clickable="false"
+                android:focusable="true"
+                android:lineHeight="16sp"
+                android:showText="true"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textOff="Ministatement"
+                android:textOn="Ministatement"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:thumb="@null"
+                app:showText="true"
+                app:track="@null"
+                tools:targetApi="p" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="140dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Send Money, Make Payments, Invite a Friend $ Earn Reward points"
+                android:textColor="@color/light_blue"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/flexipay_merchants"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:text="PTS"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/black"
+                android:text="10,000"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="65dp"
+                android:layout_weight="0.01"
+                android:background="@drawable/sports"
+                android:backgroundTint="@color/black"
+                android:clickable="false"
+                android:focusable="true"
+                android:lineHeight="16sp"
+                android:showText="true"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textOff="Redeem Points"
+                android:textOn="Redeem Points"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:thumb="@null"
+                app:showText="true"
+                app:track="@null"
+                tools:targetApi="p" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="100dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.01"
+                android:background="@drawable/sports"
+                android:backgroundTint="@color/black"
+                android:clickable="false"
+                android:focusable="true"
+                android:lineHeight="16sp"
+                android:showText="true"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textOff="Invite a Friend"
+                android:textOn="Invite a Friend"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:thumb="@null"
+                app:showText="true"
+                app:track="@null"
+                tools:targetApi="p" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="330dp"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+</RelativeLayout>
