@@ -6,11 +6,13 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class RegisterActivity extends AppCompatActivity {
 
     public static ViewPager viewPager;
-    RegisterPageAdapter adapter;
+   // RegisterPageAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,24 +20,9 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         viewPager=findViewById(R.id.viewpager);
-        adapter=new RegisterPageAdapter(this);
-        viewPager.setAdapter(adapter);
-        /*if (isOpenAlready())
-        {
-            Intent intent=new Intent(RegisterActivity.this,NumberActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        }
-        else {
-            SharedPreferences.Editor editor=getSharedPreferences("slide",MODE_PRIVATE).edit();
-            editor.putBoolean("slide", true);
-            editor.commit();
-        }
+       // adapter=new RegisterPageAdapter(this);
+       // viewPager.setAdapter(adapter);
+
     }
 
-    private boolean isOpenAlready() {
-        SharedPreferences sharedPreferences=getSharedPreferences("slide",MODE_PRIVATE);
-        boolean result=sharedPreferences.getBoolean("slide", false);
-        return result;*/
-    }
 }

@@ -11,7 +11,7 @@
 
     <item
         android:icon="@drawable/bitmap"
-        app:showAsAction="always"
-        android:title="Bitmap"></item>
+        app:showAsAction="ifRoom"
+        android:title="Bitmap" />
 
 </menu>

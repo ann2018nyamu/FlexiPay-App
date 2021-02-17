@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class NumberActivity extends AppCompatActivity {
     private Button button;
-    ImageView imageView;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class NumberActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openRegisterActivity();
+                openDashBoardActivity();
             }
         });
     }
@@ -40,8 +40,8 @@ public class NumberActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openRegisterActivity(){
-        Intent intent = new Intent(this, RegisterActivity.class);
+    public void openDashBoardActivity(){
+        Intent intent = new Intent(this, OnBoardingActivity.class);
         startActivity(intent);
     }
 

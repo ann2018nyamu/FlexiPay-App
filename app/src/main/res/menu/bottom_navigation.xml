@@ -13,7 +13,7 @@
         android:icon="@drawable/pay_bills"
         android:id="@+id/bills"
         app:showAsAction="always"
-        android:title="PAY_BILL">
+        android:title="PAY BILL">
 
     </item>
 

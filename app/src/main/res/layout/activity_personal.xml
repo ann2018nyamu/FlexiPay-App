@@ -2,120 +2,181 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/back_ground"
+    android:background="@drawable/background_image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".PersonalActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginLeft="82dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="124dp"
         android:text="Personal Info"
-        android:textStyle="bold"
-        android:textSize="36dp"
-        android:textColor="@color/white"/>
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="normal" />
+
 
     <ImageView
         android:id="@+id/back2"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_back"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginRight="324dp"/>
+        android:layout_width="18sp"
+        android:layout_height="18sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="250dp"
+        android:src="@drawable/ic_back"/>
 
     <TextView
         android:layout_width="360dp"
         android:layout_height="84dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:gravity="center"
-        android:text="Please provide us with your
-personal information. Your name should just as it appears on your National ID, Passport"
+        android:fontFamily="@font/montserrat"
+        android:textSize="14sp"
+        android:lineHeight="26dp"
+        android:gravity="center_horizontal"
+        android:text="@string/please_provide_us_with_your_personal_information_your_name_should_just_as_it_appears_on_your_national_id_passport"
         />
 
-    <EditText
-        android:layout_width="328dp"
-        android:layout_height="42dp"
-        android:id="@+id/Surname"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginRight="13dp"
-        android:background="@drawable/edittext_bg"
-        android:hint="Surname"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Tl_surname"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="400"
+        style="@style/inputLayoutOutlinedBoxCustom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:hint="Surname"
+            android:inputType="textShortMessage"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/Tl_name"
+       android:layout_width="360dp"
+       android:layout_height="50dp"
+       android:layout_marginStart="15dp"
+       android:layout_marginEnd="15dp"
+       android:layout_marginTop="255dp"
+       android:weightSum="400"
+       style="@style/inputLayoutOutlinedBoxCustom">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fontFamily="@font/montserrat"
+           android:hint="Given Name"
+           android:inputType="textShortMessage"
+           android:singleLine="true"
+           android:textColor="@color/color"
+           android:textSize="14sp"/>
+
+
+   </com.google.android.material.textfield.TextInputLayout>
+
 
     <EditText
-        android:layout_width="328dp"
-        android:layout_height="42dp"
-        android:id="@+id/Given_name"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginRight="13dp"
+        android:id="@+id/Tl_date"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
         android:background="@drawable/edittext_bg"
-        android:hint="Given Name"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"/>
-
-    <EditText
-        android:layout_width="328dp"
-        android:layout_height="42dp"
-        android:id="@+id/Date"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginRight="13dp"
-        android:background="@drawable/edittext_bg"
-        android:inputType="date"
         android:hint="What's Your D.O.B?(DD/MM/YY)"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"/>
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="315dp"
+        android:padding="15dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:textColorHint="@color/color"
+        android:textSize="14sp"
+        android:textStyle="normal" />
 
-    <EditText
-        android:layout_width="328dp"
-        android:layout_height="42dp"
-        android:id="@+id/Gender"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginRight="13dp"
-        android:background="@drawable/edittext_bg"
-        android:hint="Gender"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"/>
 
-    <EditText
-        android:layout_width="328dp"
-        android:layout_height="42dp"
-        android:id="@+id/Email_Address"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginRight="13dp"
-        android:background="@drawable/edittext_bg"
-        android:inputType="textEmailAddress"
-        android:hint="Enter Your Email Address"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"/>
 
-    <Button
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gender_input_layout"
+        style="@style/exposedDropdownMenuCustom"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="400">
+
+        <AutoCompleteTextView
+            android:id="@+id/Tl_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/gender"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Tl_email"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="445dp"
+        android:weightSum="400"
+        style="@style/inputLayoutOutlinedBoxCustom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/enter_your_email_address"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/color"
+            android:textSize="14sp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:id="@+id/CreateAccount_btn"
-        android:layout_marginTop="620dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="60dp"
+        android:theme="@style/Theme.FlexiPay"
+        app:backgroundTint="@null"
+        android:gravity="center"
         android:background="@drawable/button_bg"
-        android:text="Create account"
+        android:text="@string/create_account"
         android:textAllCaps="true"
-        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"
         android:textStyle="bold"/>
 
 

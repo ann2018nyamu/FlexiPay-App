@@ -4,7 +4,24 @@
     <string name="logo">logo</string>
     <string name="hidebalance">hidebalance</string>
     <string name="Ministatement">Ministatement</string>
-    <string name="Fast"><![CDATA["A Fast & Efficient Service to Go Cashless! "]]></string>
     <string name="Show_Balance">Show_Balance</string>
     <string name="Hide_Balance">Hide_Balance</string>
+    <string name="alt_number">Alternative Mobile Number</string>
+    <string name="please_provide_us_with_your_personal_information_your_name_should_just_as_it_appears_on_your_national_id_passport">Please provide us with your personal information. Your name should just as it appears on your National ID, Passport</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="create_account">Create account</string>
+    <string name="gender">Gender</string>
+    <string name="provide_us_with_the_details_we_have_requested_below">Provide us with the details we have requested below</string>
+    <string name="other_details">Other Details</string>
+    <string name="alternative_mobile_number">Alternative Mobile Number</string>
+    <string name="referral_code">Referral code</string>
+    <string name="select_occupation">Select Occupation</string>
+    <string name="good_afternoon_wilfred_n">Good Afternoon, Wilfred N</string>
+    <string name="welcome_to_flexi_pay">Welcome to Flexi Pay</string>
+    <string name="a_fast_and_efficient_service_to_go_cashless">A fast and Efficient Service to Go Cashless</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

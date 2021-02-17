@@ -4,87 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_ground"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_image"
     tools:context=".InformationActivity">
 
+
+
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
         android:id="@+id/back_arrow"
         android:src="@drawable/ic_back"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="250dp"/>
 
     <TextView
         android:layout_width="400dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginRight="89dp"
-        android:text="Other Details"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="124dp"
+        android:text="@string/other_details"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="normal"
         android:textColor="@color/white"
-        android:textSize="32dp"/>
+        android:textSize="22sp"/>
 
     <TextView
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="120dp"
-        android:textSize="20dp"
+        android:layout_marginTop="90dp"
+        android:textSize="16sp"
+        android:padding="3dp"
+        android:lineHeight="30dp"
         android:textColor="@color/white"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
-        tools:text="Provide us with the details we have
-requested below "
-        />
+        android:text="@string/provide_us_with_the_details_we_have_requested_below"/>
 
-    <EditText
-        android:layout_width="308dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:background="@drawable/edittext_bg"
-        android:hint="Alternative Mobile Number"
-        android:inputType="phone"
-        android:textColorHint="@color/white"
-        android:textSize="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Tl_number"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="400"
+        style="@style/inputLayoutOutlinedBoxCustom">
 
-    <EditText
-        android:layout_width="308dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="290dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:background="@drawable/edittext_bg"
-        android:inputType="phone"
-        android:hint="Referral code"
-        android:textColorHint="@color/white"
-        android:textSize="20dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/alternative_mobile_number"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
 
-    <EditText
-        android:layout_width="308dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:background="@drawable/edittext_bg"
-        android:inputType="text"
-        android:hint="Select Occupation"
-        android:textColorHint="@color/white"
-        android:textSize="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Tl_code"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="15dp"
+        android:weightSum="400"
+        style="@style/inputLayoutOutlinedBoxCustom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/referral_code"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/exposedDropdownMenuCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:foreground="@drawable/flag_transparent"
+        android:weightSum="400">
+
+        <AutoCompleteTextView
+            android:id="@+id/Tl_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/select_occupation"
+            android:inputType="none"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
         android:layout_width="240dp"
         android:layout_height="40dp"
         android:id="@+id/Continue_button"
-        android:layout_marginTop="620dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="60dp"
+        android:theme="@style/Theme.FlexiPay"
+        app:backgroundTint="@null"
+        android:gravity="center"
         android:background="@drawable/button_bg"
-        android:text="Continue"
+        android:text="continue"
+        android:fontFamily="@font/montserrat"
         android:textAllCaps="true"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"/>
 
 
