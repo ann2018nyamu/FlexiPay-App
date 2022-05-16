@@ -27,6 +27,10 @@ public class DashboardFragment extends Fragment {
 
     int []arr={R.drawable.flexipay_merchants,R.drawable.flexipay_send_money,R.drawable.flexipay_merchants,
             R.drawable.flexipay_accounts,R.drawable.flexipay_wallet,R.drawable.flexipay_bill,R.drawable.flexipay_sacco,
+            R.drawable.flexipay_accounts,R.drawable.flexipay_wallet,R.drawable.flexipay_bill,R.drawable.flexipay_sacco,
+            R.drawable.flexipay_accounts,R.drawable.flexipay_wallet,R.drawable.flexipay_bill,R.drawable.flexipay_sacco,
+            R.drawable.flexipay_accounts,R.drawable.flexipay_wallet,R.drawable.flexipay_bill,R.drawable.flexipay_sacco,
+            R.drawable.flexipay_accounts,R.drawable.flexipay_wallet,R.drawable.flexipay_bill,R.drawable.flexipay_sacco,
             R.drawable.flexi_cards,R.drawable.flexipay_loan};
 
     String[] names={"Buy Airtime", "Send Money",

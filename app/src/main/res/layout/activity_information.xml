@@ -132,7 +132,7 @@
         android:text="continue"
         android:fontFamily="@font/montserrat"
         android:textAllCaps="true"
-        android:textSize="15sp"
+        android:textSize="14sp"
         android:textStyle="bold"/>
 
 

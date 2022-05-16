@@ -28,8 +28,9 @@ public class OnBoardingActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_onboarding);
         //   binding = DataBindingUtil.setContentView(this, R.layout.activity_onboarding);
 
-        indicatorLayout = findViewById(R.id.indicatorLayout);
         registerButton = findViewById(R.id.btn_register);
+
+        indicatorLayout = findViewById(R.id.indicatorLayout);
         viewPager = findViewById(R.id.vpIntroSlider);
 
         registerButton.setOnClickListener(this);
